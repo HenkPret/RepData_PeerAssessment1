@@ -3,14 +3,11 @@ title: "Reproducible Research: Course Project 1"
 author: "Henk Pretorius"
 date: "24 September 2016"
 output: html_document
-    keep_md: true
 ---
-
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
 
 ```{r, echo=FALSE, include=FALSE}
 ## Load packages
@@ -127,7 +124,7 @@ Both the mean and the median values are the same after imputing values for the N
 
 ## Are there differences in activity patterns between weekdays and weekends?
 
-1. Create a new factor variable in the dataset with two levels – “weekday” and “weekend” indicating whether a given date is a weekday or weekend day.
+1. Create a new factor variable in the dataset with two levels - "weekday" and "weekend" indicating whether a given date is a weekday or weekend day.
 
 ```{r}
 rawdat <- mutate(rawdat, weekday = ifelse(weekdays(rawdat$date) == "Saturday" |
