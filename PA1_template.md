@@ -44,7 +44,7 @@ histplot1 <- histplot1+ylab("Frequency")+
 histplot1
 ```
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png)
+![plot of chunk unnamed-chunk-4](figures/Histplot1.png)
 
 3. Calculate and report the mean and median of the total number of steps taken per day.
 
@@ -83,7 +83,7 @@ lineplot1 <- ggplot(avgstep, aes(interval, meansteps))+
 lineplot1
 ```
 
-![plot of chunk unnamed-chunk-6](figure/unnamed-chunk-6-1.png)
+![plot of chunk unnamed-chunk-6](figures/Lineplot1.png)
 
 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -144,7 +144,7 @@ histplot2 <- histplot2+ylab("Frequency")+
 histplot2
 ```
 
-![plot of chunk unnamed-chunk-10](figure/unnamed-chunk-10-1.png)
+![plot of chunk unnamed-chunk-10](figures/Histplot2.png)
 
 ```r
 mean(totsteps2$totalsteps, na.rm = TRUE)
@@ -206,6 +206,6 @@ lineplot2 <- ggplot(intervsteps, aes(interval, meansteps))+
 lineplot2
 ```
 
-![plot of chunk unnamed-chunk-12](figure/unnamed-chunk-12-1.png)
+![plot of chunk unnamed-chunk-12](figures/Lineplot2.png)
 
 Both weekdays and weekends show high activity between the 750th and 1000th interval, while activity is slightly elevated for the weekends between the 1000th and 2000th interval compared to weekdays.
